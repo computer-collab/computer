@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <string.h>
+ int main() {
+retry:
+ int length,breadth;
+ char choice[20];
+
+ printf("Welcome to the world of C.  This is our first programme. \n Please select any of the choice input; \n 1. 'perimeter'  2. 'area'");
+scanf("%s",choice);
+printf("OK boss please enter the value of length and breadth and make sure that length and breadth order is correct....\n Please enter the length and breadth:");
+scanf("%d%d",&length,&breadth);
+int perimeter=2*(length+breadth);
+int area=length*breadth;
+if(strcmp(choice,"perimeter")){
+printf("OK boss! This is your perimeter output: %d",perimeter);
+
+}
+else if (strcmp(choice,"area")){
+printf("Oo boss! This is your area: %d !! Oh boss! code is successful! Congrats!!",area);
+}
+else {
+printf("Boss! ni input lo edo theda undi koddiga check chesko");
+goto retry;
+ //scanf("%d");
+// printf("hello world");
+}
+return 0;
+}
+ 
