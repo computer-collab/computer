@@ -1,6 +1,6 @@
 #include <stdio.h>
 float division (int a, int b){
-float r=a/b;
+float r=(float)a/b;
 	return r;
 }
 int main (){
